@@ -123,7 +123,7 @@ class SwapNum {
         System.out.print("Enter second number: ");
         int c = sc.nextInt();
 
-        System.out.println("Before Swap: a = " + a + ", b = " + b  +",c = "+c);
+        System.out.println("Before Swap: a = " + a + ", b = " + b +",c = "+c);
 
         // Swap using temp
         int temp = a;
@@ -134,6 +134,19 @@ class SwapNum {
 
         System.out.println("After Swap: a = " + a + ", b = " + b+",c = "+c);
 
+        sc.close();
+    }
+}
+
+ //Factorial of a number
+class Main {
+    public static void main(String[] args) {
+        System.out.println("enter the number ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        long fact = 1;
+        for(int i=1;i<=n;i++) fact *= i;
+        System.out.println(fact);
         sc.close();
     }
 }
