@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LMS Instructor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LMS Instructor Dashboard</h1>
+
+        <section id="students-section">
+            <h2>Registered Students</h2>
+            <table id="students-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Mobile</th>
+                        <th>Assigned Course</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Students will appear here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="assign-section">
+            <h2>Assign / Update / Remove Course</h2>
+            <form id="course-form">
+                <label>Student ID: <input type="text" id="studentId" required></label>
+                <label>Course ID: <input type="text" id="courseId"></label>
+                <label>Action:
+                    <select id="action" title="Select action" aria-label="Action">
+                        <option value="assign">Assign</option>
+                        <option value="update">Update</option>
+                        <option value="remove">Remove</option>
+                    </select>
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="notification-section">
+            <h2>Notifications</h2>
+            <div id="notifications"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
